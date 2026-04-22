@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI产业链投资研究报告 2026 | AI Agent结构性机会分析</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-content">
+            <div class="header-brand">
+                <span class="header-logo">AI</span>
+                <span class="header-title">产业链投资研究</span>
+            </div>
+            <nav class="header-nav">
+                <a href="#summary" class="nav-link active">概要</a>
+                <a href="#chain" class="nav-link">产业链</a>
+                <a href="#agent" class="nav-link">AI Agent</a>
+                <a href="#opportunities" class="nav-link">机会</a>
+                <a href="#strategy" class="nav-link">策略</a>
+            </nav>
+        </div>
+        <div class="header-progress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge">2026年度研究报告</div>
+            <h1 class="hero-title">AI产业链<br>结构性投资机会</h1>
+            <p class="hero-subtitle">从芯片到应用，深度解析AI Agent爆发背景下的产业链机会与投资逻辑</p>
+            <div class="hero-meta">
+                <span class="hero-date">2026年4月</span>
+                <span class="hero-divider">|</span>
+                <span class="hero-author">VC投资研究部</span>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>向下滚动</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Executive Summary -->
+    <section class="section section-summary" id="summary">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <div class="section-titles">
+                    <h2 class="section-title">Executive Summary</h2>
+                    <p class="section-subtitle">核心投资观点</p>
+                </div>
+            </div>
+
+            <div class="insights-grid">
+                <div class="insight-card" data-animate>
+                    <div class="insight-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <div class="insight-label">结构性机会</div>
+                    <h3 class="insight-title">AI Infra赛道确定性最高</h3>
+                    <p class="insight-text">算力需求三年CAGR 35%+，芯片、服务器、数据中心产业链持续受益，技术迭代放缓后格局趋稳</p>
+                    <div class="insight-data">
+                        <span class="data-value">35%</span>
+                        <span class="data-unit">CAGR</span>
+                    </div>
+                </div>
+
+                <div class="insight-card" data-animate>
+                    <div class="insight-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <div class="insight-label">窗口期</div>
+                    <h3 class="insight-title">Agent应用层进入最佳布局期</h3>
+                    <p class="insight-text">2025-2026年是AI Agent PMF验证的黄金窗口，早期布局可获得超额回报</p>
+                    <div class="insight-data">
+                        <span class="data-value">2025-26</span>
+                        <span class="data-unit">窗口期</span>
+                    </div>
+                </div>
+
+                <div class="insight-card" data-animate>
+                    <div class="insight-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <div class="insight-label">增长引擎</div>
+                    <h3 class="insight-title">垂直应用护城河最强</h3>
+                    <p class="insight-text">医疗、金融、制造等领域AI应用，具备数据壁垒和客户关系护城河，续费率高于通用工具</p>
+                    <div class="insight-data">
+                        <span class="data-value">85%+</span>
+                        <span class="data-unit">续费率</span>
+                    </div>
+                </div>
+
+                <div class="insight-card highlight" data-animate>
+                    <div class="insight-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <div class="insight-label">重点关注</div>
+                    <h3 class="insight-title">Model Context Protocol</h3>
+                    <p class="insight-text">MCP正在成为AI Agent时代的"USB接口"，标准化协议层存在平台型机会</p>
+                    <div class="insight-data">
+                        <span class="data-value">MCP</span>
+                        <span class="data-unit">新协议层</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Metrics -->
+            <div class="metrics-row" data-animate>
+                <div class="metric-item">
+                    <div class="metric-value" data-count="2840">0</div>
+                    <div class="metric-label">2026年全球AI市场规模（亿美元）</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-value" data-count="42">0</div>
+                    <div class="metric-label">全球GenAI融资事件（2025年）</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-value" data-count="68">0</div>
+                    <div class="metric-label">Agent相关融资占比（%）</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-value" data-count="2.3">0</div>
+                    <div class="metric-label">平均P/S倍数（成长期AI公司）</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Chain -->
+    <section class="section section-chain" id="chain">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <div class="section-titles">
+                    <h2 class="section-title">AI产业链全景</h2>
+                    <p class="section-subtitle">从芯片到应用的价值分布</p>
+                </div>
+            </div>
+
+            <div class="chain-container">
+                <div class="chain-layer chain-upstream" data-animate>
+                    <div class="chain-layer-header">
+                        <span class="chain-layer-tag">上游</span>
+                        <h3 class="chain-layer-title">基础设施层</h3>
+                    </div>
+                    <div class="chain-nodes">
+                        <div class="chain-node" data-tooltip="AI服务器、存储、网络设备制造商">
+                            <div class="node-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                    <path d="M8 21h8M12 17v4"/>
+                                </svg>
+                            </div>
+                            <span class="node-name">服务器/硬件</span>
+                        </div>
+                        <div class="chain-node" data-tooltip="GPU、FPGA、ASIC芯片">
+                            <div class="node-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="4" y="4" width="16" height="16" rx="2"/>
+                                    <rect x="9" y="9" width="6" height="6"/>
+                                    <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"/>
+                                </svg>
+                            </div>
+                            <span class="node-name">AI芯片</span>
+                        </div>
+                        <div class="chain-node" data-tooltip="超算中心、云计算、边缘计算">
+                            <div class="node-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M4 14a10 10 0 0 1 16 0"/>
+                                    <path d="M4 10a14 14 0 0 1 16 0"/>
+                                    <circle cx="12" cy="19" r="3"/>
+                                </svg>
+                            </div>
+                            <span class="node-name">数据中心</span>
+                        </div>
+                        <div class="chain-node" data-tooltip="分布式计算、虚拟化、容器编排">
+                            <div class="node-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="3"/>
+                                    <circle cx="12" cy="5" r="2"/>
+                                    <circle cx="19" cy="12" r="2"/>
+                                    <circle cx="12" cy="19" r="2"/>
+                                    <circle cx="5" cy="12" r="2"/>
+                                    <path d="M12 9V6M12 18v-3M14.5 10.5l2.5-2.5M7 14.5l2.5-2.5M14.5 13.5l2.5 2.5M7 9.5L4.5 7"/>
+                                </svg>
+                            </div>
+                            <span class="node-name">云原生 Infra</span>
+                        </div>
+                    </div>
+                    <div class="chain-value-dist">
+                        <span class="dist-label">价值分布</span>
+                        <div class="dist-bar">
+                            <div class="dist-fill" style="width: 35%"></div>
+                        </div>
+                        <span class="dist-value">35%</span>
+                    </div>
+                </div>
+
+                <div class="chain-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14M19 12l-7 7-7-7"/>
+                    </svg>
+                </div>
+
+                <div class="chain-layer chain-midstream" data-animate>
+                    <div class="chain-layer-header">
+                        <span class="chain-layer-tag">中游</span>
+                        <h3 class="chain-layer-title">模型层</h3>
+                    </div>
+                    <div class="chain-nodes">
+                        <div class="chain-node" data-tooltip="LLM、VLM、多模态模型">
+                            <div class="node-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
+                            <span class="node-name">基础模型</span>
+                        </div>
+                        <div class="chain-node" data-tooltip="RAG、Fine-tuning、RLHF">
+                            <div class="node-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                    <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <span class="node-name">模型优化</span>
+                        </div>
+                        <div class="chain-node" data-tooltip="API网关、MCP、工具调用">
+                            <div class="node-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                    <path d="M8 21h8M12 17v4M7 8h2M15 8h2M7 12h10"/>
+                                </svg>
+                            </div>
+                            <span class="node-name">推理/部署</span>
+                        </div>
+                    </div>
+                    <div class="chain-value-dist">
+                        <span class="dist-label">价值分布</span>
+                        <div class="dist-bar">
+                            <div class="dist-fill" style="width: 25%"></div>
+                        </div>
+                        <span class="dist-value">25%</span>
+                    </div>
+                </div>
+
+                <div class="chain-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14M19 12l-7 7-7-7"/>
+                    </svg>
+                </div>
+
+                <div class="chain-layer chain-downstream" data-animate>
+                    <div class="chain-layer-header">
+                        <span class="chain-layer-tag">下游</span>
+                        <h3 class="chain-layer-title">应用层</h3>
+                    </div>
+                    <div class="chain-nodes">
+                        <div class="chain-node" data-tooltip="Copilot、智能助手、Agent平台">
+                            <div class="node-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 2a10 10 0 1 0 10 10"/>
+                                    <path d="M12 12l4-4"/>
+                                    <path d="M18 6l2-2"/>
+                                </svg>
+                            </div>
+                            <span class="node-name">AI Agent</span>
+                        </div>
+                        <div class="chain-node" data-tooltip="AI+医疗、金融、制造、教育">
+                            <div class="node-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                                </svg>
+                            </div>
+                            <span class="node-name">垂直应用</span>
+                        </div>
+                        <div class="chain-node" data-tooltip="MaaS、Agent as a Service">
+                            <div class="node-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                    <path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/>
+                                </svg>
+                            </div>
+                            <span class="node-name">AI SaaS</span>
+                        </div>
+                        <div class="chain-node" data-tooltip="开发框架、部署工具、监控平台">
+                            <div class="node-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                                </svg>
+                            </div>
+                            <span class="node-name">开发者工具</span>
+                        </div>
+                    </div>
+                    <div class="chain-value-dist">
+                        <span class="dist-label">价值分布</span>
+                        <div class="dist-bar">
+                            <div class="dist-fill" style="width: 40%"></div>
+                        </div>
+                        <span class="dist-value">40%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chain Insights -->
+            <div class="chain-insights" data-animate>
+                <div class="chain-insight">
+                    <div class="insight-marker">→</div>
+                    <p><strong>上游扩产周期</strong>：芯片产能释放需要18-24个月，2025年订单仍紧张，2026年下半年缓解</p>
+                </div>
+                <div class="chain-insight">
+                    <div class="insight-marker">→</div>
+                    <p><strong>中游收敛</strong>：基础模型竞争进入尾声，2026年将形成3-5家头部格局</p>
+                </div>
+                <div class="chain-insight">
+                    <div class="insight-marker">→</div>
+                    <p><strong>下游爆发</strong>：应用层创新活跃，Agent将成为2026-2027年最大投资主题</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Agent Section -->
+    <section class="section section-agent" id="agent">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <div class="section-titles">
+                    <h2 class="section-title">AI Agent专题</h2>
+                    <p class="section-subtitle">技术栈解析与商业化路径</p>
+                </div>
+            </div>
+
+            <!-- Agent Tech Stack -->
+            <div class="agent-tech" data-animate>
+                <h3 class="tech-title">Agent技术栈架构</h3>
+                <div class="tech-stack">
+                    <div class="tech-layer">
+                        <div class="tech-layer-name">应用层</div>
+                        <div class="tech-components">
+                            <span class="tech-component">Copilot</span>
+                            <span class="tech-component">Agent</span>
+                            <span class="tech-component">Assistant</span>
+                        </div>
+                    </div>
+                    <div class="tech-connector"></div>
+                    <div class="tech-layer">
+                        <div class="tech-layer-name">编排层 Orchestration</div>
+                        <div class="tech-components">
+                            <span class="tech-component highlight-tech">MCP Protocol</span>
+                            <span class="tech-component">LangGraph</span>
+                            <span class="tech-component">AutoGPT</span>
+                        </div>
+                    </div>
+                    <div class="tech-connector"></div>
+                    <div class="tech-layer">
+                        <div class="tech-layer-name">能力层 Core Capabilities</div>
+                        <div class="tech-components">
+                            <span class="tech-component">Planning</span>
+                            <span class="tech-component">Memory</span>
+                            <span class="tech-component">Tool Use</span>
+                            <span class="tech-component">Reasoning</span>
+                        </div>
+                    </div>
+                    <div class="tech-connector"></div>
+                    <div class="tech-layer">
+                        <div class="tech-layer-name">模型层</div>
+                        <div class="tech-components">
+                            <span class="tech-component">GPT-4o</span>
+                            <span class="tech-component">Claude 3.5</span>
+                            <span class="tech-component">Gemini 2.0</span>
+                            <span class="tech-component">Llama 4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MCP Spotlight -->
+            <div class="mcp-spotlight" data-animate>
+                <div class="mcp-badge">MCP</div>
+                <div class="mcp-content">
+                    <h3 class="mcp-title">Model Context Protocol — AI时代的"USB接口"</h3>
+                    <p class="mcp-desc">MCP是由Anthropic主导开源的AI Agent互操作协议，定义了模型与外部工具、数据源的标准化连接方式。预计2026年成为80%以上AI Agent的标配协议。</p>
+                    <div class="mcp-stats">
+                        <div class="mcp-stat">
+                            <span class="stat-value">2,000+</span>
+                            <span class="stat-label">GitHub Stars</span>
+                        </div>
+                        <div class="mcp-stat">
+                            <span class="stat-value">500+</span>
+                            <span class="stat-label">社区连接器</span>
+                        </div>
+                        <div class="mcp-stat">
+                            <span class="stat-value">80%</span>
+                            <span class="stat-label">2026年采用率预测</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mcp-diagram">
+                    <div class="mcp-node center">Model</div>
+                    <div class="mcp-node">MCP Host</div>
+                    <div class="mcp-node">MCP Client</div>
+                    <div class="mcp-connections">
+                        <div class="mcp-line"></div>
+                        <div class="mcp-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Agent Business Models -->
+            <div class="business-models" data-animate>
+                <h3 class="models-title">商业化路径</h3>
+                <div class="models-grid">
+                    <div class="model-card">
+                        <div class="model-header">
+                            <span class="model-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"/>
+                                </svg>
+                            </span>
+                            <h4 class="model-name">Enterprise</h4>
+                        </div>
+                        <p class="model-desc">面向大型企业的AI Agent平台，提供私有部署、SLA保障、定制化服务</p>
+                        <div class="model-metrics">
+                            <div class="model-metric">
+                                <span class="metric-num">$50K-500K</span>
+                                <span class="metric-type">ACV</span>
+                            </div>
+                            <div class="model-metric">
+                                <span class="metric-num">90%+</span>
+                                <span class="metric-type">续费率</span>
+                            </div>
+                        </div>
+                        <div class="model-players">代表：Cognition、Builder.io</div>
+                    </div>
+
+                    <div class="model-card">
+                        <div class="model-header">
+                            <span class="model-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </span>
+                            <h4 class="model-name">Developer Platform</h4>
+                        </div>
+                        <p class="model-desc">面向开发者的Agent开发框架和API，按调用量计费</p>
+                        <div class="model-metrics">
+                            <div class="model-metric">
+                                <span class="metric-num">$0.1-2</span>
+                                <span class="metric-type">/1K Tokens</span>
+                            </div>
+                            <div class="model-metric">
+                                <span class="metric-num">200%+</span>
+                                <span class="metric-type">年增长</span>
+                            </div>
+                        </div>
+                        <div class="model-players">代表：LangChain、Fetch.ai</div>
+                    </div>
+
+                    <div class="model-card">
+                        <div class="model-header">
+                            <span class="model-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="5" y="2" width="14" height="20" rx="2"/>
+                                    <path d="M12 18h.01"/>
+                                </svg>
+                            </span>
+                            <h4 class="model-name">Consumer</h4>
+                        </div>
+                        <p class="model-desc">面向个人的AI助手和Agent，按订阅制收费</p>
+                        <div class="model-metrics">
+                            <div class="model-metric">
+                                <span class="metric-num">$10-20</span>
+                                <span class="metric-type">/月</span>
+                            </div>
+                            <div class="model-metric">
+                                <span class="metric-num">30%+</span>
+                                <span class="metric-type">月流失率</span>
+                            </div>
+                        </div>
+                        <div class="model-players">代表：Rabbit R1、Arc Browser</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Opportunities -->
+    <section class="section section-opportunities" id="opportunities">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <div class="section-titles">
+                    <h2 class="section-title">重点赛道投资机会</h2>
+                    <p class="section-subtitle">四象限机会矩阵</p>
+                </div>
+            </div>
+
+            <!-- Matrix -->
+            <div class="opportunity-matrix" data-animate>
+                <div class="matrix-axis-y">
+                    <span>投资机会</span>
+                </div>
+                <div class="matrix-axis-x">
+                    <span>成熟度</span>
+                </div>
+                <div class="matrix-quadrants">
+                    <div class="matrix-quadrant q1">
+                        <div class="quadrant-label">今天</div>
+                        <div class="quadrant-content">
+                            <div class="quadrant-item">
+                                <span class="item-name">AI Infra</span>
+                                <span class="item-desc">算力芯片、服务器</span>
+                            </div>
+                            <div class="quadrant-item">
+                                <span class="item-name">基础模型</span>
+                                <span class="item-desc">LLM、VLM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="matrix-quadrant q2">
+                        <div class="quadrant-label">近期(1-2年)</div>
+                        <div class="quadrant-content">
+                            <div class="quadrant-item highlight-item">
+                                <span class="item-name">MCP Protocol</span>
+                                <span class="item-desc">协议层平台</span>
+                            </div>
+                            <div class="quadrant-item">
+                                <span class="item-name">模型部署</span>
+                                <span class="item-desc">推理优化</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="matrix-quadrant q3">
+                        <div class="quadrant-label">中期(2-3年)</div>
+                        <div class="quadrant-content">
+                            <div class="quadrant-item">
+                                <span class="item-name">AI Agent平台</span>
+                                <span class="item-desc">企业级Agent</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="matrix-quadrant q4">
+                        <div class="quadrant-label">长期(3年+)</div>
+                        <div class="quadrant-content">
+                            <div class="quadrant-item">
+                                <span class="item-name">垂直应用</span>
+                                <span class="item-desc">AI+行业</span>
+                            </div>
+                            <div class="quadrant-item">
+                                <span class="item-name">消费级Agent</span>
+                                <span class="item-desc">个人AI助手</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Tracks -->
+            <div class="tracks-grid" data-animate>
+                <div class="track-card">
+                    <div class="track-header">
+                        <span class="track-tag">上游</span>
+                        <h4 class="track-name">AI Infrastructure</h4>
+                    </div>
+                    <div class="track-logic">
+                        <strong>投资逻辑：</strong>算力需求确定性最高，技术迭代放缓后格局趋稳，中国算力国产化替代加速
+                    </div>
+                    <div class="track-metrics">
+                        <div class="track-metric">
+                            <span class="t-label">市场空间</span>
+                            <span class="t-value">$1,200亿 2027E</span>
+                        </div>
+                        <div class="track-metric">
+                            <span class="t-label">关键指标</span>
+                            <span class="t-value">订单量、产能利用率</span>
+                        </div>
+                    </div>
+                    <div class="track-risk">
+                        <strong>风险点：</strong>估值泡沫、国产替代进度不及预期
+                    </div>
+                </div>
+
+                <div class="track-card">
+                    <div class="track-header">
+                        <span class="track-tag">中游</span>
+                        <h4 class="track-name">Foundation Model</h4>
+                    </div>
+                    <div class="track-logic">
+                        <strong>投资逻辑：</strong>赢者通吃，推理成本每年下降50%，多模态能力成为标配
+                    </div>
+                    <div class="track-metrics">
+                        <div class="track-metric">
+                            <span class="t-label">市场空间</span>
+                            <span class="t-value">$400亿 2027E</span>
+                        </div>
+                        <div class="track-metric">
+                            <span class="t-label">关键指标</span>
+                            <span class="t-value">推理成本、 Benchmark排名</span>
+                        </div>
+                    </div>
+                    <div class="track-risk">
+                        <strong>风险点：</strong>技术路线迭代快、开源模型性能追平闭源
+                    </div>
+                </div>
+
+                <div class="track-card">
+                    <div class="track-header">
+                        <span class="track-tag">下游</span>
+                        <h4 class="track-name">AI Agent</h4>
+                    </div>
+                    <div class="track-logic">
+                        <strong>投资逻辑：</strong>下一代交互范式，PMF验证加速，企业级Agent进入规模化拐点
+                    </div>
+                    <div class="track-metrics">
+                        <div class="track-metric">
+                            <span class="t-label">市场空间</span>
+                            <span class="t-value">$800亿 2028E</span>
+                        </div>
+                        <div class="track-metric">
+                            <span class="t-label">关键指标</span>
+                            <span class="t-value">PMF验证、Retention</span>
+                        </div>
+                    </div>
+                    <div class="track-risk">
+                        <strong>风险点：</strong>落地场景碎片化、甲方自研替代
+                    </div>
+                </div>
+
+                <div class="track-card">
+                    <div class="track-header">
+                        <span class="track-tag">下游</span>
+                        <h4 class="track-name">Vertical AI</h4>
+                    </div>
+                    <div class="track-logic">
+                        <strong>投资逻辑：</strong>数据壁垒和客户关系护城河，垂直领域续费率高达85%+
+                    </div>
+                    <div class="track-metrics">
+                        <div class="track-metric">
+                            <span class="t-label">市场空间</span>
+                            <span class="t-value">$600亿 2028E</span>
+                        </div>
+                        <div class="track-metric">
+                            <span class="t-label">关键指标</span>
+                            <span class="t-value">ARR、CAC/LTV比</span>
+                        </div>
+                    </div>
+                    <div class="track-risk">
+                        <strong>风险点：</strong>垂直赛道天花板较低、竞争加剧
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Strategy -->
+    <section class="section section-strategy" id="strategy">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <div class="section-titles">
+                    <h2 class="section-title">投资策略建议</h2>
+                    <p class="section-subtitle">时机判断与赛道优先级</p>
+                </div>
+            </div>
+
+            <div class="strategy-timeline" data-animate>
+                <div class="timeline-item">
+                    <div class="timeline-period">短期<br>2026</div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">聚焦AI Infra和模型层</h4>
+                        <p class="timeline-desc">算力产业链仍是最确定性机会，关注国产替代和推理芯片；基础模型格局初定，寻找差异化机会</p>
+                        <div class="timeline-priority">
+                            <span class="priority-tag high">优先</span>
+                            <span class="priority-item">AI服务器</span>
+                            <span class="priority-item">推理芯片</span>
+                            <span class="priority-item">模型部署</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-connector"></div>
+
+                <div class="timeline-item">
+                    <div class="timeline-period">中期<br>2027-28</div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">布局Agent平台和协议层</h4>
+                        <p class="timeline-desc">MCP等协议层平台型机会显现；企业级Agent平台进入规模化阶段，早期布局享受估值红利</p>
+                        <div class="timeline-priority">
+                            <span class="priority-tag high">优先</span>
+                            <span class="priority-item">MCP生态</span>
+                            <span class="priority-item">Agent平台</span>
+                            <span class="priority-item">开发工具</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-connector"></div>
+
+                <div class="timeline-item">
+                    <div class="timeline-period">长期<br>2029+</div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">深耕垂直应用和消费级Agent</h4>
+                        <p class="timeline-desc">AI+行业解决方案进入收获期；消费级Agent成为下一代入口，押注平台型机会</p>
+                        <div class="timeline-priority">
+                            <span class="priority-tag medium">关注</span>
+                            <span class="priority-item">Vertical AI</span>
+                            <span class="priority-item">Consumer Agent</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Risk Warnings -->
+            <div class="risk-warnings" data-animate>
+                <h3 class="risk-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                    </svg>
+                    风险提示
+                </h3>
+                <div class="risks-grid">
+                    <div class="risk-item">
+                        <span class="risk-icon">1</span>
+                        <p>宏观流动性收紧可能导致AI估值回调30-50%</p>
+                    </div>
+                    <div class="risk-item">
+                        <span class="risk-icon">2</span>
+                        <p>技术路线迭代快，Transformer替代者可能出现</p>
+                    </div>
+                    <div class="risk-item">
+                        <span class="risk-icon">3</span>
+                        <p>监管政策不确定性，尤其在中国市场</p>
+                    </div>
+                    <div class="risk-item">
+                        <span class="risk-icon">4</span>
+                        <p>企业AI支出可能低于预期，PMF验证周期长</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">AI</span>
+                    <span class="footer-text">产业链投资研究</span>
+                </div>
+                <div class="footer-meta">
+                    <p class="footer-disclaimer">本报告仅供研究参考，不构成投资建议。数据来源：Wind、Bloomberg、公开资料整理</p>
+                    <p class="footer-copyright">© 2026 VC投资研究部</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
